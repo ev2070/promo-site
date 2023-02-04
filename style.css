@@ -1,0 +1,101 @@
+/*Dancing Script font from Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+/*Didact Gothic font from Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+body, html { /*body and html elements*/
+	height: 100%; 				/*elements will have full page height*/
+	margin: 0;	  				/*prevent brower from auto positioning both elements*/
+	background-color: #000000;	/*webpage will have a black background*/
+}
+
+h1 { /*h1 element*/
+	font-family: 'Dancing Script';	/*apply Dancing Script font*/
+	font-size: 48px;				/*font size = 48px*/
+	color: #E2D0CC;					/*Champagne Pink text color*/
+}
+
+p, h3, li { /*paragraph, heading 3, list item elements*/
+	font-family: 'Didact Gothic';	/*apply Didact Gothic font*/
+	color: #E2D0CC;					/*Champagne Pink text color*/
+}
+
+footer { /*footer element*/
+	background-color: rgba(226,208,204,0.3);	/*Champagne Pink background, low opacity*/
+	padding: 25px;								/*top/bottom/left/right 25px padding*/
+	text-align: center;							/*center text*/
+}
+
+/*for making custom bullet point: https://love2dev.com/blog/customize-bulleted-list/*/
+/*for content: https://www.alt-codes.net/heart_alt_code.php*/
+li:before { /*before list item elements*/
+	content: '\1F497';	/*have a pink heart as bullet point*/
+	margin-left: -25px; /*left margin of -25px*/
+	margin-right: 10px; /*right margin of 10px*/
+} 
+
+li { /*list item elements*/
+	margin-bottom: 10px; /*bottom margin of 10px*/
+}
+
+.section { /*section class*/
+	border-style: dotted;	/*dotted border*/
+	border-width: 7px;		/*7px width border*/
+	border-radius: 7px;		/*7px border radius*/
+	margin: 100px;			/*100px margins (space outside)*/
+	padding: 50px;			/*50px padding (space inside*/
+}
+
+.section1 { /*section 1 class*/
+	border-color: #E2D0CC;	/*Champagne Pink border*/
+}
+
+.section2 { /*section 2 class*/
+	background-color: rgba(226,208,204,0.3); /*Champagne Pink background*/
+}
+
+.subsection { /*subsection class*/
+	display: flex;				/*div will be a flex container*/
+	align-items: center;		/*vertical alignment*/
+	justify-content: center;	/*horizontal alignment*/
+}
+
+.section-text { /*section text class*/
+	margin-right: 50px;	/*right margin is 50px*/
+}
+
+.section-img { /*section image class*/
+	border-radius: 7px; /*round corners*/
+}
+
+.albums, .gallery-img { /*albums and gallery image classes*/
+	margin: 10px; /*top/bottom/left/right margins of 10px*/
+}
+
+#landing-bg { /*landing background div*/
+	/*div will display a full page image*/
+	/*https://www.w3schools.com/howto/howto_css_full_page.asp*/
+	background-image: url("pink-landing.jpg"); 			/*background will be an image*/
+	height: 100%; 							   			/*div will have full page height*/
+	width: 100%;							   			/*div will have full page width*/
+	background-position: center;			   			/*centers background image*/
+	background-repeat: no-repeat; 			   			/*does not repeat background image*/
+	background-size: cover; 				   			/*scales background image to the smallest size possible that fills div*/
+	
+	opacity: 0.7;							   			/*lower div opacity*/
+	box-shadow: inset 0px -200px 100px -100px #000000;	/*inner bottom black shadow*/
+}
+
+#logo { /*logo div*/
+	position:absolute; 		 /*absolute position to place the*/
+	top:0;			   		 /*logo over the landing background*/
+
+	height: 100%; 			 /*div will have full page height*/
+	width: 100%;  			 /*div will have full page width*/
+
+	/*div contents will be centered*/
+	/*https://stackoverflow.com/questions/6490252/vertically-centering-a-div-inside-another-div*/
+	display: flex;			 /*div will be a flex container*/
+	justify-content: center; /*horizontal alignment*/
+	align-items: center; 	 /*vertical alignment*/
+}
